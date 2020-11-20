@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Final Project</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="store">
+
+  <!-- Displaying an Instrument -->
+  <div  v-for="(instrument, index) in instruments">
+    
+    <div class="instrument" v-bind:class="instrument.brand">
+    <img v-if="!instrument.noImg" v-bind:src="instrument.img" v-on:click="instrumentDetail(instrument)">
+    <h1>{{instrument.name}}</h1>
+      
+      
+      <!-- Adding an Item to the Cart -->
+     <div> <button class="addButton" v-on:click="addToCart(instrument,index)">Add To Your Cart</button></div>
+
+    </div>
+    </div>
+ 
+
+
+
+  
+   <div> <button class="cart" v-on:click="removeItems">
+Cart: {{cart.length}}</button></div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

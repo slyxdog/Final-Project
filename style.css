@@ -1,0 +1,48 @@
+body {
+background-color: Grey;
+}
+
+#store {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.instrument {
+  position: relative;
+  height: 500px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+img {
+  margin-top: 13px;
+  width: 150px;
+  height: 150px;
+}
+
+.head {
+  text-align: center;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: bold;
+
+}
+
+
+
+
+.Fender:hover {
+  background-color: Red;
+}
+.Yamaha:hover {
+  background-color: Green;
+}
+.Maton:hover {
+  background-color: blue;
+}
